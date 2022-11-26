@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============================================================================================================ -->
+    <!-- SEO -->
+    <title>Header - Footer</title>
+    <!-- END SEO -->
+    <!-- ============================================================================================================ -->
+
+
+
+
+
+    <!-- ============================================================================================================ -->
+    <!-- CSS -->
+    <!-- LIBRARY -->
+    <!-- SELECT-2 -->
+    <link href="../css/lib/select2.min.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="../css/lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/lib/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- END CSS -->
+    <!-- ============================================================================================================ -->
+</head>
+
+<body>
+    <!-- HEADER=========================================================================================== -->
+    <header id="header" class="bg-light">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="brand-contain d-flex justify-content-center align-items-center">
+                        <img src="../assets/img/logo.jpg" class="me-3" alt="">
+                        <span>King Express Bus</span>
+                    </div>
+                </a>
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Cẩm Nang Du Lịch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <a href="" class="me-3 text-decoration-none text-success d-none d-lg-block">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Kiếm tra vé</span>
+                </a>
+                <div class="nav-hotline d-none position-relative d-none d-lg-block">
+                    <a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Liên hệ
+                    </a>
+                    <div class="collapse position-absolute top-100 end-0 mt-2 overlay" id="collapseExample">
+                        <div class="card card-body">
+                            <div class="hotline-item d-flex align-items-center my-1">
+                                <a href="" class="text-decoration-none">0565651190</a>
+                                <span class="mx-2"> - </span>
+                                <span>Để đặt dịch vụ thuê xe</span>
+                            </div>
+                            <div class="hotline-item d-flex align-items-center my-1">
+                                <a href="" class="text-decoration-none">0565651190</a>
+                                <span class="mx-2"> - </span>
+                                <span>Để đặt dịch vụ thuê xe</span>
+                            </div>
+                            <div class="hotline-item d-flex align-items-center my-1">
+                                <a href="" class="text-decoration-none">0565651190</a>
+                                <span class="mx-2"> - </span>
+                                <span>Để đặt dịch vụ thuê xe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER======================================================================================== -->
+
+
+    <!-- MAIN============================================================================================== -->
+    <main>
+        <section class="index-search" style="background-image: url('../assets/img/head-bg.png');">
+            <div class="container">
+                <div class="contain-all d-flex align-items-center">
+                    <div class="w-100">
+                        <h1 class="text-center header-content">King Express Bus - Cam kết luôn luôn giữ vé</h1>
+                        <div class="booking-form-contain">
+                            <div class="booking-form booking-custom bn  ">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="index-form-start" class="fw-bold">Điểm đi</label>
+                                                <select id="index-form-start" class="form-control search-select">
+                                                    <option value="1">Hà Nội</option>
+                                                    <option value="2">Sapa</option>
+                                                    <option value="3">Hải Phòng</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="index-form-start" class="fw-bold">Điểm đến</label>
+                                                <select id="index-form-end" class="form-control search-select">
+                                                    <option>Sapa</option>
+                                                    <option>Huế</option>
+                                                    <option>Hội An</option>
+                                                    <option>Đà Nẵng</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <span class="form-label">Ngày khởi hành</span>
+                                                <input id="index-date-pick" class="form-control" type="date" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-btn">
+                                        <button class="submit-btn">Tìm chuyến xe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-feature py-4">
+            <div class="container">
+                <h2 class="mb-4">Đặt vé tại King Express Bus</h2>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="feature-item-contain">
+                            <div class="icon d-flex justify-content-center">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div class="title">
+                                <h5 class="text-center">Giữ chỗ 100%</h5>
+                            </div>
+                            <div class="description text-center">
+                                <span class="">
+                                    King Express luôn đảm bảo giữ chỗ cho bạn
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="feature-item-contain">
+                            <div class="icon d-flex justify-content-center">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                            </div>
+                            <div class="title">
+                                <h5 class="text-center">Thanh toán dễ dàng</h5>
+                            </div>
+                            <div class="description text-center">
+                                <span class="">
+                                    Thanh toán nhanh và tiện lợi qua tài khoản ngân hàng của bạn
+                                    (Vẫn có thể thanh toán tại cơ sở)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="feature-item-contain">
+                            <div class="icon d-flex justify-content-center">
+                                <i class="fa-solid fa-scale-unbalanced"></i>
+                            </div>
+                            <div class="title">
+                                <h5 class="text-center">Giá vé rẻ nhất</h5>
+                            </div>
+                            <div class="description text-center">
+                                <span class="">
+                                    Giá vé tại King Express luôn là rẻ nhất thị trường
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="feature-item-contain">
+                            <div class="icon d-flex justify-content-center">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <div class="title">
+                                <h5 class="text-center">Đảm bảo giữ chỗ</h5>
+                            </div>
+                            <div class="description text-center">
+                                <span class="">
+                                    King Express luôn chắc chắn chuyến đi của bạn đã được giữ chỗ
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-bus-feature py-4 bg-light">
+            <div class="container">
+                <h2 class="">Tiện ích trên xe</h2>
+                <p class="mb-4">
+                    Mỗi hành trình của chúng tôi luôn đem đến những tiện ích tuyệt với cho bạn
+                </p>
+                <div class="bus-feature-contain">
+                    <div class="row g-2" loop="4">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="bus-card-feature">
+                                <div class="card p-4">
+                                    <div class="d-flex align-items-start justify-content-center">
+                                        <div class="icon me-3">
+                                            <i class="fa-solid fa-wifi fw-bold text-primary fs-2 mt-2"></i>
+                                        </div>
+                                        <div class="title">
+                                            <h5 class="fw-bolder">Wifi miễn phí mỗi chuyến đi</h5>
+                                            <p class="text-dark text-opacity-75">Wifi luôn là miễn phí để kết nối với mọi người trong suốt chuyến đi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="index-popular-route py-4">
+            <div class="container">
+                <h2>Tuyến đường phổ biến</h2>
+                <div class="contain-slider">
+                    <div class="owl-carousel owl-theme" loop="5">
+                        <div class="item">
+                            <div class="card-popular-contain">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="../assets/img/card-popular.png" class="card-img-top w-100" alt="">
+                                        <div class="card-body">
+                                            <h5>Hà Nội - Sa Pa</h5>
+                                            <p class="card-text">
+                                                Từ 130.000đ
+                                                <del>260.000đ</del>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- END MAIN============================================================================================== -->
+
+
+
+    <!-- FOOTER=============================================================================================== -->
+    <hr class="mb-0">
+    <footer class="py-3 py-md-5 bg-light">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-lg-3">
+                    <h5>Về chúng tôi</h5>
+                    <div class="link-group">
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5>Về chúng tôi</h5>
+                    <div class="link-group">
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5>Về chúng tôi</h5>
+                    <div class="link-group">
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5>Về chúng tôi</h5>
+                    <div class="link-group">
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <div class="contain">
+                        <h5>Bản quyền thuộc Công ty TNHH King Express Bus</h5>
+                        <p>Địa chỉ: 19 Hàng Thiếc - Hoàn Kiếm - Hà Nội</p>
+                        <p>Hotline: 0565651189</p>
+                        <p>Giấy CN và số 080u78 ngày 20/11/2022</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="contain h-100 d-flex align-items-center justify-content-center justify-content-md-end">
+                        <img src="../assets/img/footer-bo-cong-thuong.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER=============================================================================================== -->
+
+    <!-- SCRIPT=============================================================================================== -->
+    <section id="scripts">
+        <!-- ============================================================================================================ -->
+        <!-- JS -->
+        <script src="../assets/js/lib/jquery.min.js"></script>
+        <script src="../assets/js/lib/select2.min.js"></script>
+        <script src="../assets/js/lib/forLib.js"></script>
+        <script src="../assets/js/lib/owl.carousel.min.js"></script>
+        <script src="../assets/js/lib/bootstrap.bundle.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <!-- END JS -->
+        <!-- ============================================================================================================ -->
+    </section>
+</body>
+
+</html>
