@@ -239,4 +239,8 @@ p {
 }
 .index-popular-route .card-body {
   background-color: gray;
+}
+.index-popular-route img {
+  height: 115px;
+  object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
