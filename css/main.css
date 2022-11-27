@@ -400,4 +400,23 @@ p {
     margin-right: 0px;
     margin-bottom: 15px;
   }
+}
+.detail-bus .bus-slide-show .item img {
+  height: 389px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .detail-bus-content .button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 15px;
+    background-color: rgb(232, 232, 232);
+  }
+  .detail-bus .bus-slide-show .item img {
+    height: 200px;
+  }
 }/*# sourceMappingURL=main.css.map */

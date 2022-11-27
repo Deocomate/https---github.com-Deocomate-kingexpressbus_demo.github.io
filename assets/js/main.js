@@ -22,7 +22,7 @@ $(document).ready(function () {
     }
 
     //SET UP CAROUSEL AND SELECT
-    $('.owl-carousel').owlCarousel({
+    $('.owl-index-custom').owlCarousel({
         loop: true,
         margin: 10,
         nav: false,
@@ -42,6 +42,30 @@ $(document).ready(function () {
             }
         }
     })
+
+    $('.owl-bus-detail-custom').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+    
+
     $('.search-select').select2();
 
 
@@ -65,7 +89,7 @@ $(document).ready(function () {
 
 
     for (const item of $(".index-popular-route .card-body")) {
-        item.style.backgroundColor = color_route[Rand(0,5)];
+        item.style.backgroundColor = color_route[Rand(0, 5)];
     }
 
 
@@ -82,10 +106,12 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
+    // Slideshow
 
 });
+
+
+function changeImage(element) {
+    let main_prodcut_image = document.getElementById('main_product_image');
+    main_prodcut_image.src = element.src;
+}
