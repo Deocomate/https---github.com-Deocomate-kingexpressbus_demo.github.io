@@ -42,7 +42,6 @@ $(document).ready(function () {
             }
         }
     })
-
     $('.owl-bus-detail-custom').owlCarousel({
         loop: true,
         margin: 10,
@@ -63,12 +62,7 @@ $(document).ready(function () {
             }
         }
     })
-
-    
-
     $('.search-select').select2();
-
-
     //
     const color_popular_route_bg = {
         color1: "rgb(198, 50, 78)",
@@ -86,28 +80,39 @@ $(document).ready(function () {
         color_popular_route_bg.color5,
         color_popular_route_bg.color6,
     ]
-
-
     for (const item of $(".index-popular-route .card-body")) {
         item.style.backgroundColor = color_route[Rand(0, 5)];
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Slideshow
-
+    let check_is_ticket_page = false
+    for (const item of $("#price-per-seat")) {
+        check_is_ticket_page = true
+    }
+    if (check_is_ticket_page) {
+        let priceSeat = $("#price-per-seat").val()
+        $(".check-seat-choose").change(function () {
+            let numTicket = 0
+            for (const item of $(".check-seat-choose")) {
+                if (item.checked) {
+                    numTicket++
+                }
+            }
+            // console.log(numTicket);
+            let allPrice = numTicket * Number(priceSeat);
+            allPrice = parseFloat(allPrice).toLocaleString(window.document.documentElement.lang);
+            $(".all-money").html(
+                `${allPrice}đ`
+            )
+        })
+        $("#select-pick").change(function () {
+            if ($(this).val() == "in_hotel") {
+                $(".hotel-pick").removeClass("d-none")
+            }else{
+                $(".hotel-pick").addClass("d-none")
+            }
+        })
+    }
 });
 
 

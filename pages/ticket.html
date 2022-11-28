@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ============================================================================================================ -->
+    <!-- SEO -->
+    <title>Trang chủ</title>
+    <meta name="description" content="Hiển thị thông tin ở Trang chủ">
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="Hiển thị thông tin ở Trang chủ" />
+    <meta property="og:image" content="../assets/img/head-bg.png" />
+    <!-- END SEO -->
+    <!-- ============================================================================================================ -->
+
+
+
+
+
+    <!-- ============================================================================================================ -->
+    <!-- CSS -->
+    <!-- LIBRARY -->
+    <!-- SELECT-2 -->
+    <link href="../css/lib/select2.min.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="../css/lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/lib/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- END CSS -->
+    <!-- ============================================================================================================ -->
+</head>
+
+<body>
+    <!-- HEADER=========================================================================================== -->
+    <header id="header" class="bg-light">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="brand-contain d-flex justify-content-center align-items-center">
+                        <img src="../assets/img/logo.jpg" class="me-3" alt="">
+                        <span>King Express Bus</span>
+                    </div>
+                </a>
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Cẩm Nang Du Lịch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <a href="" class="me-3 text-decoration-none text-success d-none d-lg-block">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <span>Kiếm tra vé</span>
+                </a>
+                <div class="nav-hotline d-none position-relative d-none d-lg-block">
+                    <a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Liên hệ
+                    </a>
+                    <div class="collapse position-absolute top-100 end-0 mt-2 overlay" id="collapseExample">
+                        <div class="card card-body">
+                            <div class="hotline-item d-flex align-items-center my-1">
+                                <a href="" class="text-decoration-none">0565651190</a>
+                                <span class="mx-2"> - </span>
+                                <span>Để đặt dịch vụ thuê xe</span>
+                            </div>
+                            <div class="hotline-item d-flex align-items-center my-1">
+                                <a href="" class="text-decoration-none">0565651190</a>
+                                <span class="mx-2"> - </span>
+                                <span>Để đặt dịch vụ thuê xe</span>
+                            </div>
+                            <div class="hotline-item d-flex align-items-center my-1">
+                                <a href="" class="text-decoration-none">0565651190</a>
+                                <span class="mx-2"> - </span>
+                                <span>Để đặt dịch vụ thuê xe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER======================================================================================== -->
+
+
+    <!-- MAIN============================================================================================== -->
+    <main>
+        <section class="search-breadcrumb py-4">
+            <div class="container">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Đặt vé
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-8">
+                    <section class="ticket-information">
+                        <div class="header">
+                            <h1>Đặt vé Hà Nội đi Sa Pa</h1>
+                        </div>
+                        <div class="form-information">
+                            <form action="">
+                                <input type="hidden" id="price-per-seat" value="300000">
+                                <div class="card mb-3">
+                                    <div class="card-header fw-bold">Thông tin chính</div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Loại xe</th>
+                                                        <td>Xe giường nằm 34 chỗ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Giờ xuất phát</th>
+                                                        <td>22:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Giờ đến</th>
+                                                        <td>6:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Ngày đi</th>
+                                                        <td>
+                                                            <input type="date" name="" id="index-date-pick">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-header fw-bold">Điểm đón trả khách</div>
+                                    <div class="card-body">
+                                        <div class="row g-3">
+                                            <div class="col-12 col-md-6">
+                                                <h5>Điểm xuất phát</h5>
+                                                <select name="" id="select-pick" class="form-select mb-3">
+                                                    <option value="">208 Trần Quang Khải</option>
+                                                    <option value="">208 Trần Quang Khải</option>
+                                                    <option value="">208 Trần Quang Khải</option>
+                                                    <option value="in_hotel">Đón tại khách sạn(trong phố cổ)</option>
+                                                </select>
+                                                <div class="hotel-pick d-none">
+                                                    <label for="">Địa chỉ khách sạn</label>
+                                                    <input type="text" class="form-control" placeholder="A24">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <h5>Điểm đến</h5>
+                                                <h5>7:30 - Sa Pa</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-header fw-bold">Vị trí mong muốn</div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="">Nhập vị trí mong muốn của bạn: </label>
+                                            <div class="plane">
+                                                <div class="exit exit--front fuselage"></div>
+                                                <ol class="cabin fuselage">
+                                                    <li class="row row--1">
+                                                        <ol class="seats" type="A">
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A1" />
+                                                                <label for="A1">A1</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B1" />
+                                                                <label for="B1">B1</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C1" />
+                                                                <label for="C1">C1</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A2" />
+                                                                <label for="A2">A2</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B2" />
+                                                                <label for="B2">B2</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C2" />
+                                                                <label for="C2">C2</label>
+                                                            </li>
+                                                        </ol>
+                                                        <ol class="seats" type="B">
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A3" />
+                                                                <label for="A3">A3</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B3" />
+                                                                <label for="B3">B3</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C3" />
+                                                                <label for="C3">C3</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A4" />
+                                                                <label for="A4">A4</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B4" />
+                                                                <label for="B4">B4</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C4" />
+                                                                <label for="C4">C4</label>
+                                                            </li>
+                                                        </ol>
+                                                        <ol class="seats" type="B">
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A5" />
+                                                                <label for="A5">A5</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B5" />
+                                                                <label for="B5">B5</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C5" />
+                                                                <label for="C5">C5</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A6" />
+                                                                <label for="A6">A6</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B6" />
+                                                                <label for="B6">B6</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C6" />
+                                                                <label for="C6">C6</label>
+                                                            </li>
+                                                        </ol>
+                                                        <ol class="seats" type="B">
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A7" />
+                                                                <label for="A7">A7</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B7" />
+                                                                <label for="B7">B7</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C7" />
+                                                                <label for="C7">C7</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A8" />
+                                                                <label for="A8">A8</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B8" />
+                                                                <label for="B8">B8</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C8" />
+                                                                <label for="C8">C8</label>
+                                                            </li>
+                                                        </ol>
+                                                        <ol class="seats" type="B">
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A9" />
+                                                                <label for="A9">A9</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B9" />
+                                                                <label for="B9">B9</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C9" />
+                                                                <label for="C9">C9</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A10" />
+                                                                <label for="A10">A10</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B10" />
+                                                                <label for="B10">B10</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="C10" />
+                                                                <label for="C10">C10</label>
+                                                            </li>
+                                                        </ol>
+                                                        <ol class="seats" type="B">
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A11" />
+                                                                <label for="A11">A11</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B11" />
+                                                                <label for="B11">B11</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" disabled
+                                                                    type="checkbox" id="C11" />
+                                                                <label for="C11">C11</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="A12" />
+                                                                <label for="A12">A12</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" type="checkbox"
+                                                                    id="B12" />
+                                                                <label for="B12">B12</label>
+                                                            </li>
+                                                            <li class="seat">
+                                                                <input class="check-seat-choose" disabled
+                                                                    type="checkbox" id="C12" />
+                                                                <label for="C12">C12</label>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="image-seat-detail">
+                                            <h5 class="mb-1">Sơ đồ xe:</h5>
+                                            <img src="../assets/img/xe-giuong-nam-34-cho.jpg" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-header fw-bold">Thông tin cá nhân</div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="">Họ và tên</label>
+                                            <input type="text" name="" id="" required class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="">Số điện thoại</label>
+                                            <input type="text" name="" id="" required class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="">Email</label>
+                                            <input type="email" name="" id="" required class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-floating">
+                                                <textarea required class="form-control"
+                                                    placeholder="Leave a comment here" id="floatingTextarea2"
+                                                    style="height: 100px"></textarea>
+                                                <label for="floatingTextarea2">Ghi chú thêm</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h3 class="mb-0">Tổng tiền: <span class="all-money text-success">0đ</span></h3>
+                                        </div>
+                                        <button class="btn btn-success">Đặt vé ngay</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-12 col-md-4">
+                    <section class="company-information sticky-top pt-3">
+                        <div class="card p-3 mb-3">
+                            <img class="w-100 mb-3" src="../assets/img/company-thumb.jpg" alt="">
+                            <h5 class="text-center">Hỗ trợ khách hàng</h5>
+                            <a href="" class="mb-2">
+                                <button class="btn btn-primary w-100"><i class="bi bi-telephone"></i> 0565651190</button>
+                            </a>
+                            <a href="">
+                                <button class="btn btn-outline-primary w-100"><i class="bi bi-envelope-check"></i> kingexpressbus@gmail.com</button>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- END MAIN============================================================================================== -->
+
+
+
+    <!-- FOOTER=============================================================================================== -->
+    <hr class="mb-0">
+    <footer class="py-3 py-md-5 bg-light">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-lg-3">
+                    <h5>Về chúng tôi</h5>
+                    <div class="link-group">
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5>Về chúng tôi</h5>
+                    <div class="link-group">
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5>Về chúng tôi</h5>
+                    <div class="link-group">
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5>Về chúng tôi</h5>
+                    <div class="link-group">
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                        <div><a href="" class="mb-2">Thông tin 1</a></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <div class="contain">
+                        <h5>Bản quyền thuộc Công ty TNHH King Express Bus</h5>
+                        <p>Địa chỉ: 19 Hàng Thiếc - Hoàn Kiếm - Hà Nội</p>
+                        <p>Hotline: 0565651189</p>
+                        <p>Giấy CN và số 080u78 ngày 20/11/2022</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="contain h-100 d-flex align-items-center justify-content-center justify-content-md-end">
+                        <img src="../assets/img/footer-bo-cong-thuong.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER=============================================================================================== -->
+
+    <!-- SCRIPT=============================================================================================== -->
+    <section id="scripts">
+        <!-- ============================================================================================================ -->
+        <!-- JS -->
+        <script src="../assets/js/lib/jquery.min.js"></script>
+        <script src="../assets/js/lib/select2.min.js"></script>
+        <script src="../assets/js/lib/forLib.js"></script>
+        <script src="../assets/js/lib/owl.carousel.min.js"></script>
+        <script src="../assets/js/lib/bootstrap.bundle.js"></script>
+
+        <script src="../assets/js/main.js"></script>
+        <!-- END JS -->
+        <!-- ============================================================================================================ -->
+    </section>
+</body>
+
+</html>
